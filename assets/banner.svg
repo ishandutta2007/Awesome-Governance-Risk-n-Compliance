@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    
+    <!-- Dynamic Glowing Elements -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+    
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 52px; fill: #ffffff; }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; font-weight: 500; font-size: 22px; fill: #cbd5e1; }
+    .badge-text { font-family: system-ui, -apple-system, sans-serif; font-weight: 600; font-size: 14px; fill: #e2e8f0; }
+    
+    /* Dynamic Animations */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.08); }
+    }
+
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(180deg); }
+      100% { transform: translateY(0px) rotate(360deg); }
+    }
+
+    @keyframes dashStream {
+      0% { stroke-dashoffset: 100; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .pulsing-bg { animation: pulseGlow 6s infinite ease-in-out; transform-origin: center; }
+    .particle { animation: floatParticle 8s infinite ease-in-out; transform-origin: center; }
+    .stream-line { stroke-dasharray: 10 15; animation: dashStream 4s linear infinite; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Dynamic Animated Background Elements (Behind Foreground Text) -->
+  <circle cx="200" cy="100" r="180" fill="url(#glow)" class="pulsing-bg" />
+  <circle cx="1000" cy="300" r="220" fill="url(#glow)" class="pulsing-bg" style="animation-delay: -3s;" />
+
+  <!-- Abstract Grid & Flow Lines -->
+  <path d="M -50 300 Q 300 150 600 320 T 1250 200" fill="none" stroke="url(#primaryGrad)" stroke-width="3" opacity="0.4" class="stream-line"/>
+  <path d="M -50 320 Q 350 380 750 250 T 1250 120" fill="none" stroke="url(#accentGrad)" stroke-width="2" opacity="0.3" class="stream-line" style="animation-duration: 6s;"/>
+
+  <!-- Floating Governance Floating Cards / Icons (Positioned safely around main text) -->
+  <g class="particle" style="animation-delay: 0s;">
+    <rect x="90" y="60" width="130" height="40" rx="20" fill="#1e293b" stroke="#475569" stroke-width="1.5" opacity="0.8"/>
+    <text x="155" y="85" text-anchor="middle" class="badge-text">🛡️ SOC 2</text>
+  </g>
+
+  <g class="particle" style="animation-delay: -2s;">
+    <rect x="980" y="70" width="140" height="40" rx="20" fill="#1e293b" stroke="#475569" stroke-width="1.5" opacity="0.8"/>
+    <text x="1050" y="95" text-anchor="middle" class="badge-text">🔐 ISO 27001</text>
+  </g>
+
+  <g class="particle" style="animation-delay: -4s;">
+    <rect x="100" y="300" width="120" height="40" rx="20" fill="#1e293b" stroke="#475569" stroke-width="1.5" opacity="0.8"/>
+    <text x="160" y="325" text-anchor="middle" class="badge-text">⚖️ GDPR</text>
+  </g>
+
+  <g class="particle" style="animation-delay: -1s;">
+    <rect x="960" y="290" width="130" height="40" rx="20" fill="#1e293b" stroke="#475569" stroke-width="1.5" opacity="0.8"/>
+    <text x="1025" y="315" text-anchor="middle" class="badge-text">📊 HIPAA</text>
+  </g>
+
+  <!-- Foreground Title and Subtitle Container (Ensures Title & Subtitle Are Always Clear & Unobstructed) -->
+  <g filter="url(#shadow)">
+    <!-- Decorative Category Tag -->
+    <rect x="440" y="95" width="320" height="32" rx="16" fill="url(#primaryGrad)"/>
+    <text x="600" y="116" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#ffffff" letter-spacing="1.5">AWESOME GRC ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="600" y="195" text-anchor="middle" class="title">Governance, Risk &amp; Compliance</text>
+
+    <!-- Subtitle -->
+    <text x="600" y="245" text-anchor="middle" class="subtitle">Curated SaaS Platforms, Automated Tools &amp; Open-Source Projects</text>
+
+    <!-- Decorative Line -->
+    <rect x="520" y="280" width="160" height="4" rx="2" fill="url(#accentGrad)"/>
+  </g>
+</svg>
