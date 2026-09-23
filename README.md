@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Governance-Risk-n-Compliance/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Governance-Risk-n-Compliance?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Governance-Risk-n-Compliance/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Governance-Risk-n-Compliance?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Governance-Risk-n-Compliance/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Governance-Risk-n-Compliance?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Governance-Risk-n-Compliance/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Governance-Risk-n-Compliance?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -58,9 +58,9 @@ The table below outlines leading SaaS platforms ranked by company scale (Valuati
 
 ## 💻 Open-Source GitHub Projects
 
-Below is a curated list of top open-source GRC software, framework parsers, and security compliance tools ranked by **GitHub Star Count (descending)**:
+Below is a curated list of top open-source GRC software, framework parsers, and security compliance tools ranked by **GitHub Stars_Count (descending)**:
 
-| 📦 Repository & Link | ⭐ Star Count | 📜 License | 🚀 Key Capabilities & Overview |
+| 📦 Repository & Link | ⭐ Stars_Count | 📜 License | 🚀 Key Capabilities & Overview |
 | :--- | :--- | :--- | :--- |
 | **[Gitleaks](https://github.com/gitleaks/gitleaks)** | [<img src="https://img.shields.io/github/stars/gitleaks/gitleaks?style=social&color=white" alt="Gitleaks Stars" />](https://github.com/gitleaks/gitleaks/stargazers) | MIT | SAST scanner for detecting secrets, API keys, and tokens in git repos for compliance enforcement. |
 | **[Wazuh](https://github.com/wazuh/wazuh)** | [<img src="https://img.shields.io/github/wazuh/wazuh?style=social&color=white" alt="Wazuh Stars" />](https://github.com/wazuh/wazuh/stargazers) | GPL v2 | Open-source XDR and SIEM platform for threat detection, regulatory monitoring (PCI DSS, GDPR, NIST). |
