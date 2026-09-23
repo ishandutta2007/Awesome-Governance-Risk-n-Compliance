@@ -1,6 +1,6 @@
 # Awesome-Governance-Risk-n-Compliance
 
-## Top Governance, Risk & Compliance (GRC) Tools Ecosystem
+### Top Governance, Risk & Compliance (GRC) Tools Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**
 *Focused on Compliance Automation, Risk Management, Audit Preparation & Control Monitoring*
